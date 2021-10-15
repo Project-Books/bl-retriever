@@ -18,10 +18,10 @@ def read_csv():
                 row['Series title'],
                 row['Country of publication'],
                 row['Publisher'],
-                row['Date of creation/publication'],
+                row['Year of publication'],
                 row['Edition'],
                 row['Topics'],
-                row['Genre'],
+                row['Genres'],
                 row['Languages'],
                 row['Notes'],
             )
