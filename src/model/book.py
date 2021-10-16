@@ -1,3 +1,5 @@
+import json
+
 from src.model.author import Author
 from src.model.publisher import Publisher
 
@@ -12,3 +14,6 @@ class Book:
         self.authors = authors
         self.languages = languages
         self.publishers = publishers
+
+    def to_json(self):
+        return json.dumps(self, default=lambda b: b.__dict__)
